@@ -18,13 +18,13 @@ const QuizPage = () => {
 
   const [check, setCheck] = useState(null);
 
-  const getQuestions = async () => {
-    const response = await fetch(
-      "http://my-json-server.typicode.com/DanielBarbakadze/Advanced-JS-and-React-Basics/db"
-    );
-    const data = await response.json();
-    return data;
-  };
+const getQuestions = async () => {
+  const response = await fetch(
+    "https://my-json-server.typicode.com/DanielBarbakadze/Advanced-JS-and-React-Basics/db"
+  );
+  const data = await response.json();
+  return data;
+};
 
   const saveLocal = (key, value, time) => {
     const db = {
